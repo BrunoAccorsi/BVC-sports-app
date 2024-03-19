@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9e9e9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+#registration-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+#confirmation-notice {
+  width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#confirmation-notice p b {
+  color: #031a62;
+  font-size: 1.5rem;
+}
+
+#confirmation-notice p {
+  font-size: 1.5rem;
+}
+
+#confirmation-notice p + p {
+  margin-top: 0;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group label {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  color: #031a62;
+}
+
+.input-group select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #031a62;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px; /* Optional: Adjusts space between label and input */
+}
+
+img {
+  margin: auto;
+  width: 40rem;
+}
+
+h2 {
+  color: #031a62;
+  font-size: 2rem;
+  margin: 0;
+}

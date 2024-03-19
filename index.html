@@ -3,12 +3,20 @@
   <head>
     <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <main>
       <img src="Logo.svg" alt="Bow valley College" />
       <h2>Sport Club Event Registration</h2>
       <div id="registration-form">
+        <div id="loading-spinner" style="display: none">
+          <i class="fas fa-spinner fa-spin"></i>
+        </div>
         <form id="regForm">
           <div class="input-group">
             <label for="id">ID:</label>

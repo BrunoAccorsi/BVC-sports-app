@@ -20,7 +20,6 @@ main {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 100px;
 }
 
 #confirmation-notice {
@@ -95,4 +94,11 @@ h2 {
   color: #031a62;
   font-size: 2rem;
   margin: 0;
+}
+
+#loading-spinner {
+  color: grey;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
 }

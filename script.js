@@ -14,8 +14,13 @@ $(document).ready(function () {
       status,
     };
 
-    $.post('http://localhost:3000/register', data, function (data) {
-      var confirmationMsg = `
+    $('#loading-spinner').show();
+
+    $.post(
+      'https://bvc-sports-api.onrender.com/register',
+      data,
+      function (data) {
+        var confirmationMsg = `
       <h2>Confirmation</h2>
       <p><b>ID:</b> ${data.id}</p>
       <p><b>Full Name:</b> ${data.fullname}</p>
@@ -25,14 +30,16 @@ $(document).ready(function () {
 
       <button type="button" id="register">Register new attendee</button>
       `;
+        $('#loading-spinner').hide();
 
-      $('#confirmation-notice').html(confirmationMsg).show();
+        $('#confirmation-notice').html(confirmationMsg).show();
 
-      $('#register').on('click', function () {
-        $('#confirmation-notice').hide();
-        $('#registration-form').show();
-      });
-      $('#registration-form').hide();
-    });
+        $('#register').on('click', function () {
+          $('#confirmation-notice').hide();
+          $('#registration-form').show();
+        });
+        $('#registration-form').hide();
+      }
+    );
   });
 });
